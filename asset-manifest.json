@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.a7721e65.chunk.css",
-    "main.js": "/static/js/main.3a50115e.chunk.js",
-    "main.js.map": "/static/js/main.3a50115e.chunk.js.map",
+    "main.js": "/static/js/main.137bfe41.chunk.js",
+    "main.js.map": "/static/js/main.137bfe41.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fc692d5b.js",
     "runtime-main.js.map": "/static/js/runtime-main.fc692d5b.js.map",
-    "static/js/2.ca1501cc.chunk.js": "/static/js/2.ca1501cc.chunk.js",
-    "static/js/2.ca1501cc.chunk.js.map": "/static/js/2.ca1501cc.chunk.js.map",
+    "static/js/2.5a4461f2.chunk.js": "/static/js/2.5a4461f2.chunk.js",
+    "static/js/2.5a4461f2.chunk.js.map": "/static/js/2.5a4461f2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6bfa7f418a5ffad158d7bfcb4aff4080.js": "/precache-manifest.6bfa7f418a5ffad158d7bfcb4aff4080.js",
+    "precache-manifest.086efb44a205bddf88e303b914013723.js": "/precache-manifest.086efb44a205bddf88e303b914013723.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.a7721e65.chunk.css.map": "/static/css/main.a7721e65.chunk.css.map",
     "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
@@ -58,12 +58,13 @@
     "static/media/stanford_logo.png": "/static/media/stanford_logo.da0e7c80.png",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.de3da806.svg",
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.7f0feeed.svg",
-    "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.67a6a11c.svg"
+    "static/media/ui_ux_design.svg": "/static/media/ui_ux_design.67a6a11c.svg",
+    "static/media/usc_logo.png": "/static/media/usc_logo.5516ab81.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fc692d5b.js",
-    "static/js/2.ca1501cc.chunk.js",
+    "static/js/2.5a4461f2.chunk.js",
     "static/css/main.a7721e65.chunk.css",
-    "static/js/main.3a50115e.chunk.js"
+    "static/js/main.137bfe41.chunk.js"
   ]
 }
