@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% if page.cv_pdf %}
+   <meta http-equiv="refresh" content="0;url={{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}">
+{% else %}
 <!-- _layouts/cv.html -->
 {% unless site.data.resume %}
 <div class="post">
@@ -116,3 +119,4 @@ layout: default
 
 </div>
 {% endunless %}
+{% endif %}
