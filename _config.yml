@@ -67,9 +67,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: yogkul2000
+github_username: 
 gitlab_username: # your GitLab user name
-twitter_username: __yogesh007
+twitter_username: 
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: ykulkarn
 telegram_username: # your Telegram user name
@@ -96,7 +96,7 @@ lastfm_id: # your lastfm id
 spotify_id: # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
-instagram_id: __yogesh007
+instagram_id: 
 facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
