@@ -1,6 +1,18 @@
+@article{kulkarni2024videosavi,
+  title={VideoSAVi: Self-Aligned Video Language Models without Human Supervision},
+  author={Kulkarni, Yogesh and Fazli, Pooyan},
+  journal={arXiv preprint arXiv:2412.00624},
+  year={2024},
+  abstract={Recent advances in vision-language models (VLMs) have significantly enhanced video understanding tasks. Instruction tuning (i.e., fine-tuning models on datasets of instructions paired with desired outputs) has been key to improving model performance. However, creating diverse instruction-tuning datasets is challenging due to high annotation costs and the complexity of capturing temporal information in videos. Existing approaches often rely on large language models to generate instruction-output pairs, which can limit diversity and lead to responses that lack grounding in the video content. To address this, we propose VideoSAVi (Self-Aligned Video Language Model), a novel self-training pipeline that enables VLMs to generate their own training data without extensive manual annotation. The process involves three stages: (1) generating diverse video-specific questions, (2) producing multiple candidate answers, and (3) evaluating these responses for alignment with the video content. This self-generated data is then used for direct preference optimization (DPO), allowing the model to refine its own high-quality outputs and improve alignment with video content. Our experiments demonstrate that even smaller models (0.5B and 7B parameters) can effectively use this self-training approach, outperforming previous methods and achieving results comparable to those trained on proprietary preference data. VideoSAVi shows significant improvements across multiple benchmarks: up to 28% on multi-choice QA, 8% on zero-shot open-ended QA, and 12% on temporal reasoning benchmarks. These results demonstrate the effectiveness of our self-training approach in enhancing video understanding while reducing dependence on proprietary models.},
+  html={https://arxiv.org/abs/2412.00624},
+  pdf={videosavi.pdf},
+  preview={pipeline.png},
+  selected={true}
+  }
+
 @article{9679840,
   author={Kulkarni, Yogesh and Z, Sayf Hussain and Ramamritham, Krithi and Somu, Nivethitha},
-  booktitle={2021 International Conference on Data Mining Workshops (ICDMW)}, 
+  journal={2021 International Conference on Data Mining Workshops (ICDMW)}, 
   title={EnsembleNTLDetect: An Intelligent Framework for Electricity Theft Detection in Smart Grid}, 
   year={2021},
   volume={},
@@ -11,14 +23,13 @@
   html={https://ieeexplore.ieee.org/abstract/document/9679840},
   pdf={icdmw.pdf},
   preview={ensemblentldetect.png},
-  selected={true}
   }
 
 @article{10.1007/978-3-030-81645-2_26,
 author="Kulkarni, Yogesh
 and Bhambani, Krisha",
 title="Kryptonite: An Adversarial Attack Using Regional Focus",
-booktitle="Applied Cryptography and Network Security Workshops",
+journal="Applied Cryptography and Network Security Workshops",
 year="2021",
 publisher="Springer International Publishing",
 address="Cham",
@@ -32,7 +43,7 @@ preview={kryptonite.png}
 
 @article{9377974,
   author={Kulkarni, Yogesh and Gorkar, Anurag},
-  booktitle={2020 IEEE International Conference on Big Data (Big Data)}, 
+  journal={2020 IEEE International Conference on Big Data (Big Data)}, 
   title={Intensive Image Malware Analysis and Least Significant Bit Matching Steganalysis}, 
   year={2020},
   volume={},
