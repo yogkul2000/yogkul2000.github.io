@@ -21,7 +21,7 @@ I am a first-year Computer Science Ph.D. student at the **[School of Computing a
 Previously, I graduated from the **[University of Southern California (USC)](https://www.cs.usc.edu/)** with a Master's in Computer Science. At USC, I was a Graduate Research Assistant at the 
 **[USC Institute for Creative Technologies (ICT)](https://ict.usc.edu/)**, where I worked with 3D Point Clouds, particularly at the intersection of GANs, Diffusion Models, and Gaussian Splatting for style transfer in the 3D domain. In Summer 2023, I had the privilege to intern at **[Nokia Bell Labs](https://www.bell-labs.com/#gref)**, contributing to efficient geo-distributed LLM training across heterogeneous clusters.
 
-Before coming to the US, I graduated from the **[Pune Institute of Computer Technology](https://pict.edu/)** with a Bachelor's in Computer Engineering. I was born and raised in New Delhi, where I spent 14 years at **[Mount Carmel School](https://mountcarmelschool.com/our-schools/)**. 
+In another life, I graduated from the **[Pune Institute of Computer Technology](https://pict.edu/)** with a Bachelor's in Computer Engineering. I was born and raised in New Delhi, where I spent 14 years at **[Mount Carmel School](https://mountcarmelschool.com/our-schools/)**. 
 
 <span style="font-size: 1em; font-style: italic; color: #666; font-weight: 300;">"Sometimes the best journeys in life are the ones we never expected to take."</span>
 <span style="font-size: 0.8em; color: #888; font-weight: 300;">~ Unknown</span>
