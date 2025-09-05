@@ -1,25 +1,219 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Yogesh Kulkarni</title>
-
     <meta name="author" content="Yogesh Kulkarni">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
-  </head>
+    <style>
+        @font-face {
+          font-family: 'Lato';
+          font-style: italic;
+          font-weight: 400;
+          src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: italic;
+          font-weight: 400;
+          src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: italic;
+          font-weight: 700;
+          src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: italic;
+          font-weight: 700;
+          src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        a {
+          color: #1772d0;
+          text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+          color: #f09228;
+          text-decoration: none;
+        }
+
+        body,
+        td,
+        th,
+        tr,
+        p,
+        a {
+          font-family: 'Lato', Verdana, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        strong {
+          font-family: 'Lato', Verdana, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        h2 {
+          margin: 0;
+          font-weight: normal;
+          font-family: 'Lato', Verdana, Helvetica, sans-serif;
+          font-size: 22px;
+        }
+
+        .papertitle {
+          font-family: 'Lato', Verdana, Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .name {
+          padding-top: 20px;
+          margin: 0;
+          font-family: 'Lato', Verdana, Helvetica, sans-serif;
+          font-size: 32px;
+        }
+
+        .paper-image {
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+            cursor: pointer;
+            width: 150px !important;
+            height: auto !important;
+            max-width: 150px !important;
+        }
+        
+        .paper-image:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .modal-content {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 2%;
+        }
+        
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #bbb;
+        }
+        
+        .service-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #1772d0;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        
+        .teaching-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        
+        .section-header {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .highlight-paper {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3d3 100%);
+            border-left: 4px solid #f39c12;
+            border-radius: 8px;
+        }
+        
+        .main-table {
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .profile-image {
+            transition: transform 0.3s ease;
+            filter: brightness(1.05);
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body style="background: #fafafa;">
+    <table class="main-table" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
-        <td style="padding:0px">
+        <td style="padding:30px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
+                <p class="name">
                   Yogesh Kulkarni
                 </p>
                 <p>
@@ -31,7 +225,7 @@ Previously, I graduated from the <a href="https://www.cs.usc.edu/">University of
 </p>
 
 <p>
-My journey began with a Bachelor's in Computer Engineering from the <a href="https://pict.edu/">Pune Institute of Computer Technology</a>. I grew up in New Delhi, India</a>.
+My journey began with a Bachelor's in Computer Engineering from the <a href="https://pict.edu/">Pune Institute of Computer Technology</a>. I grew up in New Delhi, India.
 </p>
                 <p style="text-align:center">
                   <a href="mailto:ykulka10@asu.edu">Email</a> &nbsp;/&nbsp;
@@ -41,238 +235,233 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
                 </p>
               </td>
               <td style="padding:2.5%;width:60%;max-width:60%">
-                <a href="images/prof_pic.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/prof_pic.png" class="hoverZoomLink"></a>
+                <a href="images/prof_pic.png"><img class="profile-image" style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/prof_pic.png" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
+          
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
-                <p>
-                 My research goal is to build models that can see, hear, and reason about the world. I focus on developing efficient and robust training methods for multimodal foundation models, using reinforcement learning and self-alignment to ground language in video and audio.      <td style="padding:0px">
+                <p style="padding: 20px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #1772d0; margin: 20px 0;">
+                 My research goal is to build models that can see, hear, and reason about the world. I focus on developing efficient and robust training methods for multimodal foundation models, using reinforcement learning and self-alignment to ground language in video and audio.
                 </p>
               </td>
             </tr>
           </tbody></table>
+          
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
 <tr>
   <td style="padding: 20px;">
-    <img src='images/avatar.png' alt='AVATAR preview image' style="display: block; margin: 0 auto 15px auto; width: 40%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://people-robots.github.io/AVATAR/">
-        <span class="papertitle">AVATAR: Reinforcement Learning to See, Hear, and Reason Over Video</span>
-      </a>
-      <br>
-      <strong>Yogesh Kulkarni</strong>, Pooyan Fazli
-      <br>
-      <em>arXiv</em>, 2025
-      <br>
-      <a href="https://people-robots.github.io/AVATAR/">project page</a>
-      /
-      <a href="https://arxiv.org/abs/2508.03100">arXiv</a>
-      <p>
-      This paper introduces AVATAR, a framework that improves multimodal reasoning by addressing limitations in standard reinforcement learning. It uses an off-policy architecture to improve data efficiency and introduces Temporal Advantage Shaping (TAS), a novel credit assignment strategy to focus learning on critical reasoning steps, achieving significant gains on audio-visual benchmarks.
-      </p>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/avatar.png' alt='AVATAR preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://people-robots.github.io/AVATAR/">
+          <span class="papertitle">AVATAR: Reinforcement Learning to See, Hear, and Reason Over Video</span>
+        </a>
+        <br>
+        <strong>Yogesh Kulkarni</strong>, Pooyan Fazli
+        <br>
+        <em>arXiv</em>, 2025
+        <br>
+        <a href="https://people-robots.github.io/AVATAR/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2508.03100">arXiv</a>
+        <p>
+        This paper introduces AVATAR, a framework that improves multimodal reasoning by addressing limitations in standard reinforcement learning. It uses an off-policy architecture to improve data efficiency and introduces Temporal Advantage Shaping (TAS), a novel credit assignment strategy to focus learning on critical reasoning steps, achieving significant gains on audio-visual benchmarks.
+        </p>
+      </div>
     </div>
   </td>
 </tr>
 
-<tr bgcolor="#ffffd0">
+<tr class="highlight-paper">
   <td style="padding: 20px;">
-    <img src='images/pipeline_pasta.png' alt='VideoPASTA preview image' style="display: block; margin: 0 auto 15px auto; width: 100%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://people-robots.github.io/VideoPASTA/">
-        <span class="papertitle">VideoPASTA: 7K Preference Pairs That Matter for Video-LLM Alignment</span>
-      </a>
-      <br>
-      <strong>Yogesh Kulkarni</strong>,
-      <a href="https://search.asu.edu/profile/4408705">Pooyan Fazli</a>   
-      <br>
-      <em><strong>2025 Conference on Empirical Methods in Natural Language Processing (EMNLP, Main Track) 2025</strong></em>
-      <br>
-      <a href="https://people-robots.github.io/VideoPASTA/">project page</a>
-      /
-      <a href="https://arxiv.org/abs/2504.14096">arXiv</a>
-      <p>
-        This paper introduces VideoPASTA, which improves video models by training them with specially crafted "bad examples" (adversarial preference pairs) that target common errors in spatial, temporal, and cross-frame understanding. It shows this targeted approach is highly efficient, achieving significant performance gains using only 7k preference pairs.
-      </p>
-    </div>
-  </td>
-</tr>
-
-
-
-<tr>
-  <td style="padding: 20px;">
-    <img src='images/regate.png' alt='ReGATE preview image' style="display: block; margin: 0 auto 15px auto; width: 100%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://arxiv.org/abs/2507.21420">
-        <span class="papertitle">ReGATE: Learning Faster and Better with Fewer Tokens in MLLMs</span>
-      </a>
-      <br>
-      Chaoyu Li, <strong>Yogesh Kulkarni</strong>, Pooyan Fazli
-      <br>
-      <em>arXiv</em>, 2025
-      <br>
-      <a href="https://arxiv.org/abs/2507.21420">arXiv</a>
-      <p>
-      This paper proposes ReGATE (Reference-Guided Adaptive Token Elision), a method to accelerate MLLM training by selectively processing crucial tokens. It uses a teacher-student framework to dynamically identify and bypass less informative tokens, achieving state-of-the-art results on benchmarks like MVBench up to 2x faster and with significantly fewer tokens.
-      </p>
-    </div>
-  </td>
-</tr>
-
-
-
-
-<tr bgcolor="#ffffd0">
-  <td style="padding: 20px;">
-    <img src='images/pipeline.png' alt='VideoSAVi preview image' style="display: block; margin: 0 auto 15px auto; width: 100%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://people-robots.github.io/VideoSAVi/">
-        <span class="papertitle">VideoSAVi: Self-Aligned Video Language Models without Human Supervision</span>
-      </a>
-      <br>
-      <strong>Yogesh Kulkarni</strong>,
-      <a href="https://search.asu.edu/profile/4408705">Pooyan Fazli</a>
-      <br>
-      <em><strong>Conference on Language Modeling (COLM 2025)</strong></em>
-      <br>
-      <a href="https://people-robots.github.io/VideoSAVi/">project page</a>
-      /
-      <a href="https://arxiv.org/abs/2412.00624">arXiv</a>
-      <p>
-      This paper presents VideoSAVi, a method to teach video models better spatial and temporal reasoning without needing human supervision. It works by having the model critique its own reasoning errors to automatically create preference data for training, achieving strong results on benchmarks efficiently.
-      </p>
-    </div>
-  </td>
-</tr>
-
-
-    
-<tr>
-  <td style="padding: 20px;">
-    <img src='images/ensemblentldetect.png' alt='EnsembleNTLDetect preview image' style="display: block; margin: 0 auto 15px auto; width: 100%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://ieeexplore.ieee.org/abstract/document/9679840">
-        <span class="papertitle">EnsembleNTLDetect: An Intelligent Framework for Electricity Theft Detection in Smart Grid</span>
-      </a>
-      <br>
-      <strong>Yogesh Kulkarni</strong>,
-      Sayf Hussain Z,
-      Krithi Ramamritham,
-      Nivethitha Somu
-      <br>
-      <em>ICDM (workshops)</em>, 2021
-      <br>
-      <a href="https://doi.org/10.1109/ICDMW53433.2021.00070">DOI</a>
-      <p>
-        This paper introduces "EnsembleNTLDetect," a robust framework designed to detect electricity theft in smart grids using consumer energy data. It uses a combination of techniques to handle missing data, data imbalance, and high dimensionality, employing an ensemble machine learning model to achieve high accuracy in identifying theft patterns compared to existing methods.
-      </p>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/pipeline_pasta.png' alt='VideoPASTA preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://people-robots.github.io/VideoPASTA/">
+          <span class="papertitle">VideoPASTA: 7K Preference Pairs That Matter for Video-LLM Alignment</span>
+        </a>
+        <br>
+        <strong>Yogesh Kulkarni</strong>,
+        <a href="https://search.asu.edu/profile/4408705">Pooyan Fazli</a>   
+        <br>
+        <em><strong>2025 Conference on Empirical Methods in Natural Language Processing (EMNLP, Main Track) 2025</strong></em>
+        <br>
+        <a href="https://people-robots.github.io/VideoPASTA/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2504.14096">arXiv</a>
+        <p>
+          This paper introduces VideoPASTA, which improves video models by training them with specially crafted "bad examples" (adversarial preference pairs) that target common errors in spatial, temporal, and cross-frame understanding. It shows this targeted approach is highly efficient, achieving significant performance gains using only 7k preference pairs.
+        </p>
+      </div>
     </div>
   </td>
 </tr>
 
 <tr>
   <td style="padding: 20px;">
-    <img src='images/kryptonite.png' alt='Kryptonite preview image' style="display: block; margin: 0 auto 15px auto; width: 100%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://link.springer.com/chapter/10.1007/978-3-030-81645-2_26">
-        <span class="papertitle">Kryptonite: An Adversarial Attack Using Regional Focus</span>
-      </a>
-      <br>
-      <strong>Yogesh Kulkarni</strong>,
-      Krisha Bhambani
-      <br>
-      <em>ACNS</em>, 2021
-      <br>
-      <a href="https://link.springer.com/chapter/10.1007/978-3-030-81645-2_26">Springer</a>
-      <p>
-        This paper proposes "Kryptonite," an efficient adversarial attack that fools image classifiers (especially for medical images) by adding tiny, hard-to-see noise mainly to the most important part of the image (Region of Interest). It causes significant misclassification with less image distortion compared to other methods.
-      </p>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/regate.png' alt='ReGATE preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://arxiv.org/abs/2507.21420">
+          <span class="papertitle">ReGATE: Learning Faster and Better with Fewer Tokens in MLLMs</span>
+        </a>
+        <br>
+        Chaoyu Li, <strong>Yogesh Kulkarni</strong>, Pooyan Fazli
+        <br>
+        <em>arXiv</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2507.21420">arXiv</a>
+        <p>
+        This paper proposes ReGATE (Reference-Guided Adaptive Token Elision), a method to accelerate MLLM training by selectively processing crucial tokens. It uses a teacher-student framework to dynamically identify and bypass less informative tokens, achieving state-of-the-art results on benchmarks like MVBench up to 2x faster and with significantly fewer tokens.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr class="highlight-paper">
+  <td style="padding: 20px;">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/pipeline.png' alt='VideoSAVi preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://people-robots.github.io/VideoSAVi/">
+          <span class="papertitle">VideoSAVi: Self-Aligned Video Language Models without Human Supervision</span>
+        </a>
+        <br>
+        <strong>Yogesh Kulkarni</strong>,
+        <a href="https://search.asu.edu/profile/4408705">Pooyan Fazli</a>
+        <br>
+        <em><strong>Conference on Language Modeling (COLM 2025)</strong></em>
+        <br>
+        <a href="https://people-robots.github.io/VideoSAVi/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2412.00624">arXiv</a>
+        <p>
+        This paper presents VideoSAVi, a method to teach video models better spatial and temporal reasoning without needing human supervision. It works by having the model critique its own reasoning errors to automatically create preference data for training, achieving strong results on benchmarks efficiently.
+        </p>
+      </div>
     </div>
   </td>
 </tr>
 
 <tr>
   <td style="padding: 20px;">
-    <img src='images/big_data.png' alt='AnImAYoung preview image' style="display: block; margin: 0 auto 15px auto; width: 100%; max-width: 500px; border-radius: 8px;">
-    <div>
-      <a href="https://ieeexplore.ieee.org/abstract/document/9377974">
-        <span class="papertitle">Intensive Image Malware Analysis and Least Significant Bit Matching Steganalysis</span>
-      </a>
-      <br>
-      <strong>Yogesh Kulkarni</strong>,
-      Anurag Gorkar
-      <br>
-      <em>IEEE Big Data</em>, 2020
-      <br>
-      <a href="https://doi.org/10.1109/BigData50022.2020.9377974">DOI</a>
-      <p>
-        This paper introduces "AnImAYoung," a framework to detect malware hidden within images using various methods like embedding code in metadata (EXIF) or using steganography (LSB Matching). It analyzes image data/metadata for suspicious code  and uses an efficient machine learning ensemble to detect hidden data in image pixels. The system is designed to be fast and accurate, making it suitable for analyzing large volumes of image data.
-      </p>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/ensemblentldetect.png' alt='EnsembleNTLDetect preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9679840">
+          <span class="papertitle">EnsembleNTLDetect: An Intelligent Framework for Electricity Theft Detection in Smart Grid</span>
+        </a>
+        <br>
+        <strong>Yogesh Kulkarni</strong>,
+        Sayf Hussain Z,
+        Krithi Ramamritham,
+        Nivethitha Somu
+        <br>
+        <em>ICDM (workshops)</em>, 2021
+        <br>
+        <a href="https://doi.org/10.1109/ICDMW53433.2021.00070">DOI</a>
+        <p>
+          This paper introduces "EnsembleNTLDetect," a robust framework designed to detect electricity theft in smart grids using consumer energy data. It uses a combination of techniques to handle missing data, data imbalance, and high dimensionality, employing an ensemble machine learning model to achieve high accuracy in identifying theft patterns compared to existing methods.
+        </p>
+      </div>
     </div>
   </td>
 </tr>
 
+<tr>
+  <td style="padding: 20px;">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/kryptonite.png' alt='Kryptonite preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-81645-2_26">
+          <span class="papertitle">Kryptonite: An Adversarial Attack Using Regional Focus</span>
+        </a>
+        <br>
+        <strong>Yogesh Kulkarni</strong>,
+        Krisha Bhambani
+        <br>
+        <em>ACNS</em>, 2021
+        <br>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-81645-2_26">Springer</a>
+        <p>
+          This paper proposes "Kryptonite," an efficient adversarial attack that fools image classifiers (especially for medical images) by adding tiny, hard-to-see noise mainly to the most important part of the image (Region of Interest). It causes significant misclassification with less image distortion compared to other methods.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 20px;">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <img class="paper-image" src='images/big_data.png' alt='AnImAYoung preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+      <div>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9377974">
+          <span class="papertitle">Intensive Image Malware Analysis and Least Significant Bit Matching Steganalysis</span>
+        </a>
+        <br>
+        <strong>Yogesh Kulkarni</strong>,
+        Anurag Gorkar
+        <br>
+        <em>IEEE Big Data</em>, 2020
+        <br>
+        <a href="https://doi.org/10.1109/BigData50022.2020.9377974">DOI</a>
+        <p>
+          This paper introduces "AnImAYoung," a framework to detect malware hidden within images using various methods like embedding code in metadata (EXIF) or using steganography (LSB Matching). It analyzes image data/metadata for suspicious code  and uses an efficient machine learning ensemble to detect hidden data in image pixels. The system is designed to be fast and accurate, making it suitable for analyzing large volumes of image data.
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
+
+          </tbody></table>
           
-          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+          <table style="width:100%; margin:20px auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
               <td>
                 <h2>Miscellanea</h2>
               </td>
             </tr>
           </tbody></table>
+          
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-           
-
             <tr>
-              <td align="center" style="padding:16px;width:40%;vertical-align:middle">
-                 <div class="colored-box" style="background-color: #c6b89e;">
-                 <h2>Academic Service</h2>
-                 </div>
+              <td style="padding:16px;width:50%;vertical-align:top">
+                <div class="service-section">
+                  <div class="section-header">Academic Service</div>
+                  <a href="https://aaai.org/conference/aaai/aaai-26/">Reviewer, AAAI 2026</a><br>
+                  <a href="https://aclrollingreview.org/">Reviewer, ARR (ACL Rolling Review) 2025</a><br>
+                  <a href="https://iccv.thecvf.com/">Reviewer, ICCV 2025</a><br>
+                  <a href="https://cvpr.thecvf.com/Conferences/2025/">Reviewer, CVPR 2025</a>
+                </div>
               </td>
-              <td style="padding:8px;width:60%;vertical-align:center">
-                                <br>
-                  <a href="https://aaai.org/conference/aaai/aaai-26/">Reviewer, AAAI 2026</a>
-                 <br>
-                <a href="https://aclrollingreview.org/">Reviewer, ARR (ACL Rolling Review) 2025</a>
-                 <br>
-                <a href="https://iccv.thecvf.com/">Reviewer, ICCV 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2025/">Reviewer, CVPR 2025</a>
-                
+              <td style="padding:16px;width:50%;vertical-align:top">
+                <div class="teaching-section">
+                  <div class="section-header">Teaching</div>
+                  <strong>Graduate Teaching Associate</strong><br>
+                  Arizona State University<br><br>
+                  CSE 485: Computer Science Capstone I<br>
+                  <em>Spring 2025</em><br><br>
+                  CSE 240: Intro to Programming Languages<br>
+                  <em>Fall 2024, Spring 2025</em><br><br>
+                  CSE 220: Programming for Computer Engineering<br>
+                  <em>Fall 2024</em>
+                </div>
               </td>
             </tr>
-            
-           
-            <tr>
-              <td align="center" style="padding:16px;width:40%;vertical-align:middle">
-                 <div class="colored-box" style="background-color: #edd892;">
-                   <h2>Teaching</h2>
-                 </div>
-              </td>
-              <td style="padding:8px;width:60%;vertical-align:middle"> Graduate Teaching Associate, Arizona State University
-                <br>
-                CSE 485: Computer Science Capstone I, Spring 2025
-                <br>
-                CSE 240: Intro to Programming Languages, Fall 2024, Spring 2025
-                <br>
-                CSE 220: Programming for Computer Engineering, Fall 2024
-              </td>
-            </tr>
-            
           </tbody></table>
+          
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Website's --> <a href="https://github.com/jonbarron/jonbarron_website">original source code</a>.
+              <td style="padding:20px 0">
+                <p style="text-align:center;font-size:small;color:#666;">
+                  Website's <a href="https://github.com/jonbarron/jonbarron_website">original source code</a>
                 </p>
               </td>
             </tr>
@@ -280,5 +469,31 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
         </td>
       </tr>
     </table>
-  </body>
+
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+      function openModal(img) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      }
+      
+      function closeModal() {
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        var modal = document.getElementById("imageModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+</body>
 </html>
