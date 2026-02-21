@@ -212,7 +212,6 @@
             transform: scale(1.02);
         }
 
-        /* New class for the category separators */
         .category-title {
             color: #333;
             font-size: 15px;
@@ -224,6 +223,51 @@
             margin-bottom: 10px;
             background-color: #fcfcfc;
         }
+
+        @media screen and (max-width: 768px) {
+            .profile-table tr {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .profile-table td {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .profile-photo-cell {
+                text-align: center !important;
+                padding: 20px 2.5% 0 !important;
+            }
+            .profile-photo-cell img {
+                width: 180px !important;
+                max-width: 180px !important;
+                height: 180px !important;
+                object-fit: cover;
+            }
+            .profile-text-cell {
+                padding: 10px 2.5% !important;
+            }
+
+            .paper-entry {
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+            .paper-image {
+                width: 100% !important;
+                max-width: 280px !important;
+                margin-bottom: 10px;
+            }
+
+            .miscellanea-table tr {
+                display: flex;
+                flex-direction: column;
+            }
+            .miscellanea-table td {
+                display: block !important;
+                width: 100% !important;
+                padding: 8px 16px !important;
+            }
+        }
     </style>
 </head>
 
@@ -231,9 +275,9 @@
     <table class="main-table" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:30px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="profile-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td class="profile-text-cell" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name">
                   Yogesh Kulkarni
                 </p>
@@ -255,7 +299,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
                   <a href="https://scholar.google.com/citations?hl=en&user=_GCLk8UAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a> &nbsp;
                 </p>
               </td>
-              <td style="padding:2.5%;width:60%;max-width:60%">
+              <td class="profile-photo-cell" style="padding:2.5%;width:60%;max-width:60%">
                 <a href="images/prof_pic.png"><img class="profile-image" style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/prof_pic.png" class="hoverZoomLink"></a>
               </td>
             </tr>
@@ -277,7 +321,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr class="highlight-paper">
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/avatar.png' alt='AVATAR preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://people-robots.github.io/AVATAR/">
@@ -304,7 +348,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/pipeline_egovita.jpg' alt='EgoVITA preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://people-robots.github.io/EgoVITA/">
@@ -332,7 +376,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr class="highlight-paper">
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/pipeline_pasta.png' alt='VideoPASTA preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://people-robots.github.io/VideoPASTA/">
@@ -356,7 +400,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
             </tr>
             <tr class="highlight-paper" style="margin-top:10px;">
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/pipeline.png' alt='VideoSAVi preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://people-robots.github.io/VideoSAVi/">
@@ -384,7 +428,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/regate.png' alt='ReGATE preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://arxiv.org/abs/2507.21420">
@@ -409,7 +453,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/ensemblentldetect.png' alt='EnsembleNTLDetect preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9679840">
@@ -434,7 +478,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
 
             <tr>
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/kryptonite.png' alt='Kryptonite preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://link.springer.com/chapter/10.1007/978-3-030-81645-2_26">
@@ -457,7 +501,7 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
 
             <tr>
               <td style="padding: 20px;">
-                <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
                   <img class="paper-image" src='images/big_data.png' alt='AnImAYoung preview image' onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
                   <div>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9377974">
@@ -487,12 +531,13 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
             </tr>
           </tbody></table>
           
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="miscellanea-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:16px;width:50%;vertical-align:top">
                 <div class="service-section">
                   <div class="section-header">Academic Service</div>
                   <a href="https://cvpr.thecvf.com/Conferences/2026/">Reviewer, CVPR 2025, 2026</a><br>
+                  <a href="https://www.computer.org/csdl/journal/tp">Reviewer, TPAMI</a><br>
                   <a href="https://aaai.org/conference/aaai/aaai-26/">Reviewer, AAAI 2026</a><br>
                   <a href="https://aclrollingreview.org/">Reviewer, ARR (ACL Rolling Review) 2025</a><br>
                   <a href="https://iccv.thecvf.com/">Reviewer, ICCV 2025</a><br>
