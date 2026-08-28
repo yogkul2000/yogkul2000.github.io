@@ -133,7 +133,7 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
-        
+
         .modal {
             display: none;
             position: fixed;
@@ -225,14 +225,53 @@
         }
 
         @media screen and (max-width: 768px) {
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+            .main-table {
+                display: block;
+                width: 100% !important;
+                max-width: 100% !important;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            .main-table > tbody,
+            .main-table > tbody > tr,
+            .main-table > tbody > tr > td {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+            }
+            .main-table > tbody > tr > td {
+                padding: 16px !important;
+            }
+            .main-table > tbody > tr > td > table {
+                width: 100% !important;
+                max-width: 100% !important;
+                table-layout: fixed;
+            }
+            .profile-table,
+            .profile-table tbody {
+                display: block;
+                width: 100%;
+            }
             .profile-table tr {
                 display: flex;
                 flex-direction: column-reverse;
+                width: 100%;
             }
             .profile-table td {
                 display: block !important;
                 width: 100% !important;
                 max-width: 100% !important;
+                box-sizing: border-box;
             }
             .profile-photo-cell {
                 text-align: center !important;
@@ -251,13 +290,18 @@
             .paper-entry {
                 flex-direction: column !important;
                 align-items: center !important;
+                width: 100%;
+                min-width: 0;
+            }
+            .paper-entry > div {
+                width: 100%;
+                min-width: 0;
             }
             .paper-image {
                 width: 100% !important;
                 max-width: 280px !important;
                 margin-bottom: 10px;
             }
-
             .miscellanea-table tr {
                 display: flex;
                 flex-direction: column;
@@ -281,26 +325,22 @@
                 <p class="name">
                   Yogesh Kulkarni
                 </p>
-                <p>
-I am a Computer Science Ph.D. student at the <a href="https://scai.engineering.asu.edu/">School of Computing and Augmented Intelligence (SCAI)</a>, <a href="https://www.asu.edu/">Arizona State University</a>, advised by <a href="https://search.asu.edu/profile/4408705">Dr. Pooyan Fazli</a> and part of the <a href="https://www.pooyanfazli.com/index.html">People and Robots Laboratory (PeRL)</a>. My research focuses on <b>multimodal reasoning</b>, particularly <b>video-language understanding</b>. I build methods that enhance <b>multimodal LLMs</b> to reason over video, audio, and language through <b>reinforcement learning</b> (e.g., GRPO) and <b>preference optimization</b> (e.g., DPO).
+<p>
+I am a Computer Science Ph.D. student at the <a href="https://scai.engineering.asu.edu/">School of Computing and Augmented Intelligence (SCAI)</a>, <a href="https://www.asu.edu/">Arizona State University</a>, advised by <a href="https://search.asu.edu/profile/4408705">Dr. Pooyan Fazli</a> in the <a href="https://www.pooyanfazli.com/index.html">People and Robots Laboratory (PeRL)</a>. My research asks how multimodal models can reason with the right evidence, at the right depth, and at the right computational cost. I develop post-training methods for video-language and omni-modal models using reinforcement learning, preference learning, and self-training.
 </p>
 
 <p>
-Previously, I graduated from the <a href="https://www.cs.usc.edu/">University of Southern California (USC)</a> with a Master's in Computer Science. At USC, I was a Graduate Research Assistant at the <a href="https://ict.usc.edu/">USC Institute for Creative Technologies (ICT)</a>, where I worked with 3D Point Clouds—particularly at the intersection of GANs, Diffusion Models, and Gaussian Splatting for style transfer. In Summer 2023, I had the privilege to intern at <a href="https://www.bell-labs.com/#gref">Nokia Bell Labs</a>, where I contributed to efficient geo-distributed LLM training across heterogeneous clusters.
-</p>
-
-<p>
-My journey began with a Bachelor's in Computer Engineering from the <a href="https://pict.edu/">Pune Institute of Computer Technology</a>. I grew up in New Delhi, India.
+Previously, I completed my Master's in Computer Science at the <a href="https://www.cs.usc.edu/">University of Southern California</a>, where I worked on 3D vision at <a href="https://ict.usc.edu/">USC ICT</a>, and interned at <a href="https://www.bell-labs.com/#gref">Nokia Bell Labs</a> on efficient geo-distributed LLM training.
 </p>
                 <p style="text-align:center">
                   <a href="mailto:ykulka10@asu.edu">Email</a> &nbsp;/&nbsp;
                   <a href="data/public_resume.pdf">Resume</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/ykulkarn/">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=_GCLk8UAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a> &nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&amp;user=_GCLk8UAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Scholar</a> &nbsp;
                 </p>
               </td>
               <td class="profile-photo-cell" style="padding:2.5%;width:60%;max-width:60%">
-                <a href="images/prof_pic.png"><img class="profile-image" style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/prof_pic.png" class="hoverZoomLink"></a>
+                <a href="images/prof_pic.png"><img class="profile-image hoverZoomLink" style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/prof_pic.png"></a>
               </td>
             </tr>
           </tbody></table>
@@ -363,12 +403,37 @@ My journey began with a Bachelor's in Computer Engineering from the <a href="htt
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p style="padding: 20px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #1772d0; margin: 20px 0;">
-                 My research goal is to build models that can see, hear, and reason about the world. I focus on developing efficient and robust training methods for multimodal foundation models, using reinforcement learning and preference-alignment to ground language in video and audio.
+                 Multimodal models should not simply reason more; they should use the right reasoning strategy for each query. I study post-training methods that adapt reasoning depth, assign credit across long video trajectories, align models with structured or self-generated feedback, and focus computation on visually informative evidence. The goal is reliable long-horizon reasoning without unnecessary tokens, expensive supervision, or unsupported deliberation.
                 </p>
               </td>
             </tr>
           </tbody></table>
 
+
+          <div class="category-title">Adaptive Multimodal Reasoning</div>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr class="highlight-paper">
+              <td style="padding: 20px;">
+                <div class="paper-entry" style="display: flex; gap: 20px; align-items: flex-start;">
+                  <img class="paper-image" src="images/flair.png" alt="Video-FLAIR adaptive reasoning framework" onclick="openModal(this)" style="border-radius: 8px; flex-shrink: 0;">
+                  <div>
+                    <a href="https://arxiv.org/abs/2608.26495">
+                      <span class="papertitle">Video-FLAIR: Not Whether to Reason, But How</span>
+                    </a>
+                    <br>
+                    <strong>Yogesh Kulkarni</strong>, Pooyan Fazli
+                    <br>
+                    <em><strong>arXiv preprint, 2026</strong></em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2608.26495">arXiv</a>
+                    <p>
+                      Video-FLAIR trains multimodal models to choose among direct, concise, and deep reasoning modes for each query. Its reinforcement-learning framework improves accuracy across image and video reasoning benchmarks while reducing average response length from 417 to 95 tokens compared with always-thinking baselines.
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
 
             <div class="category-title">Audio-Video Reasoning</div>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
